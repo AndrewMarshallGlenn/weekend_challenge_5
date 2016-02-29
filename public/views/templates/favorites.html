@@ -1,0 +1,24 @@
+<div ng-include="'views/templates/nav.html'"></div>
+
+<div class="favorite-animals">
+
+    <h2>Favorites</h2>
+
+    <p class="num-favorites">Number of Favorites: {{favoriteAnimals.length}}</p>
+
+    <div class="favorite-animals" ng-repeat="favorite in favoriteAnimals">
+
+        <div class="animal-image"><img ng-src="{{favorite.image}}" class="favorite-image"></div>
+
+        <div class="fav-animal-info">
+
+            <h3>{{favorite.name}}</h3>
+            <p>Id: {{favorite.api_id}}</p>
+
+            <p>Description: {{favorite.description}}...</p>
+
+        </div>
+
+    </div>
+
+</div>
